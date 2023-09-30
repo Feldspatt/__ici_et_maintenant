@@ -6,6 +6,7 @@
     --base-size: 1.5rem;
     --little-size: 1.2rem;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -51,8 +52,6 @@ nav {
     gap: 1rem;
 }
 
-
-
 a {
     font-size: var(--little-size);
     cursor: pointer;
@@ -72,7 +71,7 @@ a:active{
 }
 
 a:hover{
-    color: #76b476;
+    color: #76b476 !important;
 }
 
 p {
