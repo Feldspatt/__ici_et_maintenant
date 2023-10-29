@@ -8,44 +8,181 @@
     <title>Ici et Maintenant</title>
     <meta name="keywords" content="Lanvollon, 22, Côtes d'armor, Tai Chi Chuan, association, vie et maintenant, Qi Gong, Françoise Antoine, cours, enseignement, Méditation, bien être, souplesse, spiritualité">
     <meta name="description" content="Ici et Maintentant, association de Tai Chi Chuan et de Qi Gong à Lanvollon, dans les Côtes d'Armor 22. Cette ancienne discipline chinoise qui allie harmonieusement le mouvement, la méditation et la respiration pour favoriser la santé physique et mentale." />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   </head>
   <body>
+
   <header>
     <h1 id="titre">
       <em>Tai Chi Chuan</em>
     </h1>
     <nav>
-      <a href="#accueil">Accueil</a> /
-      <a href="#pratique">La pratique</a> /
-      <a href="#horaires">Horaires</a> /
-      <a href="#contact">Contacts</a>
+      <a href="#accueil" class="active-link">Accueil</a> /
+      <a href="#pratique">Histoire</a> /
+      <a href="#enseignement">Enseignement</a> /
+      <a href="#trouver">Contacts</a>
     </nav>
   </header>
   <div class="panels">
-    <p id="accueil">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin nibh vitae nibh hendrerit, quis scelerisque enim pulvinar. Vestibulum non vestibulum risus. Quisque vehicula consectetur nulla, quis consectetur quam rutrum ut. Mauris feugiat dapibus blandit. Aliquam eget nibh ut massa cursus molestie at in nisl. Sed vel porta eros. Maecenas imperdiet, ipsum at aliquet pulvinar, massa lorem lacinia nisl, vitae facilisis purus urna sed tortor. Donec aliquam euismod urna ac lacinia. Nunc mollis id nisl non lacinia. Nam aliquam sollicitudin maximus. Mauris volutpat sollicitudin mauris, eu ornare tortor sodales nec. Nullam in tincidunt turpis. Donec vitae risus nec dolor sollicitudin faucibus eget vitae sem.
-    </p>
-    <p id="pratique">
-      Le Tai Chi, également connu sous le nom de Tai Chi Chuan, est une ancienne discipline chinoise qui allie harmonieusement le mouvement, la méditation et la respiration pour favoriser la santé physique et mentale.
-      <br/>
-      <br/>
-      Cette pratique, caractérisée par des mouvements fluides et lents exécutés avec une grande précision, vise à équilibrer l'énergie vitale, ou "Qi", dans le corps.
-      <br/>
-      <br/>
-      Le Tai Chi favorise la relaxation, renforce la souplesse musculaire, améliore l'équilibre et la coordination, tout en apaisant l'esprit.
-      <br/>
-      Il est souvent considéré comme une forme de méditation en mouvement, aidant les praticiens à atteindre un état de calme intérieur et à réduire le stress.
-      Le Tai Chi est ouvert à tous les âges et niveaux de condition physique, ce qui en fait une pratique accessible à tous ceux qui cherchent à améliorer leur bien-être global.
-    </p>
-    <div class="dyptique" id="horaires">
-      <span>mardi</span><span>18h30 - 20h00</span>
-      <span>mercredi</span><span>18h30 - 20h00</span>
-      <span>jeudi</span><span>18h30 - 20h00</span>
+    <div id="accueil" class="container targeted">
+
+      <article>
+        <h4>L'association</h4>
+        <p>Créée en 2007 par Fabienne CHÉNÉ (élève de P. LOISEL), l'association <em>Ici et Maintenant</em> à pour buts de promouvoir le Taï Chi
+        Chuan, le Qi Gong et les disciplines associées, d’en favoriser le développement, et d’une
+        manière générale, la recherche des moyens permettant l’accès à l’équilibre de l’être.</p>
+      </article>
+
+      <div class="moto">" Le Tai Chi Chuan est un art martial. Les combats que nous menons dans notre école sont
+        l'amélioration de la santé et le développement de la tranquillité intérieure. "
+      </div>
+
+      <article>
+        <h4>L'enseignante</h4>
+        <p>Françoise ANTOINE a été la disciple de Fabienne Chéné pendant plusieurs années. Depuis 2015 elle assume à son tour le rôle d'enseignante.<br>
+        C'est auprès de Patrick Loisel, élève direct de CHU Gin Soon, qu'elle continue de perfectionner sa pratique.<br>
+        Visant à une compréhension étendue du corps humain, Françoise ANTOINE est aussi formée à l'énergétique chinoise et termine actuellement une
+        formation en ostéopathie énergétique (Méthode Poyet).</p>
+      </article>
+
+      <article>
+        <h4>Le lieu</h4>
+        <p>À Lanvollon, située à 17 km de Guingamp, 19km de Paimpol, 22km de Plérin
+          Dans une grande salle dédiée au tai chi chuan, conçue pour cette pratique.
+          Elle s'ouvre sur un auvent et une cour entourée de verdure.
+        </p>
+      </article>
+
+      <div class="moto">
+        " I want the power and grace I never had a chance to learn … <br/>
+        Tai Chi puts you in touch with the invisible power of—yes—the universe.<br/>
+        The best of energies become available, and soon your body and mind become an invisible power. "<br/>
+        —Lou Reed
+      </div>
+
     </div>
-    <div class="dyptique" id="contact">
-      <span>email</span><a href="mailto:scaramouche532@gmail.com">scaramouche532@gmail.com</a>
-      <span>téléphone</span><a href="tel:+33612345678">06 12 34 56 78</a>
+
+    <div id="pratique">
+      <div class="centered">
+        <img src="yang_chen_fu.jpg" alt="Yang Chen Fu" />
+      </div>
+      <p>
+        Le Tai Chi Chuan ....<br/>
+        Notre lignée<br/>
+        YANG Cheng Fu (1883-1936) a adapté la forme Yang à partir des formes ancestrales,
+        et l'a transmise à ses fils, dont
+        YANG Sau Chung (1910-1985) qui l'a enseigné à des disciples dont
+        CHU Gin Soon (1934-2019).
+        Nous pratiquons la forme Yang longue .
+      </p>
     </div>
+
+    <div id="enseignement" class="container">
+      <article>
+        <h4>Techniques travaillées</h4>
+        <ul>
+          <li>Forme yang longue à mains nues.</li>
+          <li>Travail à deux (poussée des mains, mains collantes, Dalu)</li>
+          <li>Sabre</li>
+        </ul>
+      </article>
+
+      <article>
+        <h4>Déroulé d'un cours</h4>
+        <p>Le cours commence par du Qi Gong, partie commune à tous les élèves.
+          Puis vient l'apprentissage de la forme. Certain.e.s la maîtrisent en entier, d'autres en partie.
+          L'enseignante apporte un accompagnement individuel pour que chacun progresse à son
+          rythme, ce qui suppose des moments où l'on se retrouve face à soi-même qui sont propices au
+          développement de l'autonomie et de la patience.</p>
+      </article>
+
+    </div>
+    <div id="trouver" class="container">
+      <article>
+        <h4>Horaires</h4>
+        <div class="dyptique" id="horaires">
+          <span>mardi</span>
+          <div>
+            <div>16h30</div>
+            <div>19h</div>
+          </div>
+
+          <span>jeudi</span>
+          <div>
+            <div>16h30</div>
+            <div>19H</div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h4>Contact</h4>
+        <div class="dyptique" id="contact">
+          <span>nom</span><span>Françoise ANTOINE</span>
+          <span>email</span><a href="mailto:scoise@free.fr">scoise@free.fr</a>
+          <span>téléphone</span><a href="tel:+33604001300">06 04 00 13 00</a>
+        </div>
+      </article>
+
+      <article>
+        <h4>Tarifs</h4>
+        <ul>
+          <li>222€ par an pour le travail à mains nues.</li>
+          <li>Payable en trois fois.</li>
+          <li>Possibilité de venir plusieurs fois par semaine avec une adhésion.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h4>Plan</h4>
+        <div class="centered">
+          <div id="map"></div>
+        </div>
+      </article>
+
+    </div>
+
   </div>
+
+
+
+  <script type="text/javascript">
+
+    document.querySelectorAll('a').forEach( a => {
+      a.setAttribute('data-href', a.href.split('#').pop())
+      a.removeAttribute('href')
+
+      a.addEventListener('click', (ev)=>{
+
+        ev.stopImmediatePropagation()
+        document.querySelectorAll('a').forEach( a => a.classList.remove('active-link'))
+        ev.target.classList.add('active-link')
+
+        const target = document.getElementById(a.getAttribute('data-href'))
+        if(!target) return
+        document.querySelectorAll(".targeted").forEach( tar => {
+          tar.classList.remove('targeted')
+        })
+        target.classList.add('targeted')
+      })
+    })
+  </script>
+
+  <script defer>
+    const map = L.map('map').setView([48.630841, -2.979158], 14);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([48.630841, -2.979158]).addTo(map);
+
+    const resizeObserver = new ResizeObserver(() => {
+      map.invalidateSize();
+    });
+
+    resizeObserver.observe(document.getElementById('map'));
+  </script>
+
   </body>
 </html>
