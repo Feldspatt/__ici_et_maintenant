@@ -188,7 +188,7 @@ p {
 
     .dyptique {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 0.8fr;
     }
 
     .dyptique > *:nth-child(odd) {
@@ -211,7 +211,7 @@ p {
 }
 
 #map {
-    width: 500px;
+    width: 90%;
     aspect-ratio: 1;
 }
 
