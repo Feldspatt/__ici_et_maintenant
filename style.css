@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;1,300&display=swap');
+@font-face {
+    font-family: "Bitter";
+    src: url('assets/Bitter-Regular.ttf')
+}
 
 :root {
     --base-font: 'Bitter', serif;
@@ -51,8 +54,11 @@ header > *:nth-child(2) {
 }
 
 h1{
+    text-align: center;
     font-size: 8rem;
     font-family: 'Fuggles', cursive;
+    transform: translateX(-20px);
+    font-weight: normal;
 }
 
 nav {
@@ -109,11 +115,6 @@ a:hover{
 p {
     text-align: justify;
     max-width: 1000px;
-}
-
-#titre {
-    transform: translateX(-20px);
-    font-weight: normal;
 }
 
 .panels {
@@ -196,7 +197,7 @@ p {
         --little-size: 1rem;
     }
 
-    #titre {
+    h1 {
         font-size: 3rem;
         transform: unset;
     }
@@ -233,7 +234,8 @@ p {
 
 article h2 {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: normal;
+    text-decoration-line: underline;
 }
 
 article  > *:nth-child(2) {
