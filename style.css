@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;1,300&display=swap');
 
 :root {
-    --base-font: 'Bitstream Charter', serif;
+    --base-font: 'Bitter', serif;
     --fancy-font: 'Fuggles', cursive;
     --base-size: 1.5rem;
     --little-size: 1.2rem;
@@ -12,8 +13,12 @@
     padding: 0;
 }
 
+address {
+    font-style: unset;
+}
+
 body {
-    font-family: 'Bitstream Charter', serif;
+    font-family: var(--base-font);
     font-size: var(--base-size);
     background-color: #f6f5f1;
     background-image: url("./yin_yang.svg");
@@ -57,7 +62,28 @@ nav {
     gap: 1rem;
 }
 
-a {
+blockquote {
+    margin: 0;
+}
+
+blockquote > p {
+    font-style: italic;
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote > p::before {
+    content: '\201C';
+}
+
+blockquote > p::after {
+    content: '\201D';
+}
+
+a, nav > span {
+    min-width: 48px;
+    line-height: 48px;
     font-size: var(--little-size);
     cursor: pointer;
     text-decoration: none;
@@ -200,24 +226,14 @@ p {
     width: 100%
 }
 
-.moto {
-    font-size: 1.8rem;
-    background-color: rgba(229, 229, 229, 0.78);
-    padding: 0.8em;
-    text-align: left;
-    font-style: italic;
-    border-radius: 5px;
-    backdrop-filter: blur(15px);
-}
-
 #map {
     width: 90%;
     aspect-ratio: 1;
 }
 
-article h4 {
+article h2 {
     font-size: 2rem;
-    font-weight: normal;
+    font-weight: 700;
 }
 
 article  > *:nth-child(2) {

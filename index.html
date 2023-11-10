@@ -9,7 +9,7 @@
     <meta name="keywords" content="Lanvollon, 22, Côtes d'armor, Tai Chi Chuan, association, vie et maintenant, Qi Gong, Françoise Antoine, cours, enseignement, Méditation, bien être, souplesse, spiritualité">
     <meta name="description" content="Ici et Maintentant, association de Tai Chi Chuan et de Qi Gong à Lanvollon, dans les Côtes d'Armor 22. Cette ancienne discipline chinoise qui allie harmonieusement le mouvement, la méditation et la respiration pour favoriser la santé physique et mentale." />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script defer src="./script.js" type="module"></script>
   </head>
   <body>
 
@@ -18,28 +18,30 @@
       <em>Tai Chi Chuan</em>
     </h1>
     <nav>
-      <a href="#accueil" class="active-link">Accueil</a> /
-      <a href="#pratique">Histoire</a> /
-      <a href="#enseignement">Enseignement</a> /
-      <a href="#trouver">Informations pratiques</a>
+      <span data-href="accueil" class="active-link">Accueil</span> /
+      <span data-href="pratique">Histoire</span> /
+      <span data-href="enseignement">Enseignement</span> /
+      <span data-href="trouver">Informations pratiques</span>
     </nav>
   </header>
   <div class="panels">
     <div id="accueil" class="container targeted">
 
       <article>
-        <h4>L'association</h4>
+        <h2>L'association</h2>
         <p>Créée en 2007 par Fabienne CHÉNÉ (élève de P. LOISEL), l'association <em>Ici et Maintenant</em> à pour buts de promouvoir le Taï Chi
         Chuan, le Qi Gong et les disciplines associées, d’en favoriser le développement, et d’une
         manière générale, la recherche des moyens permettant l’accès à l’équilibre de l’être.</p>
       </article>
 
-      <div class="moto">" Le Tai Chi Chuan est un art martial. Les combats que nous menons dans notre école sont
-        l'amélioration de la santé et le développement de la tranquillité intérieure. "
-      </div>
+      <blockquote>
+        <p>Le Tai Chi Chuan est un art martial. Les combats que nous menons dans notre école sont
+        l'amélioration de la santé et le développement de la tranquillité intérieure.
+        </p>
+      </blockquote>
 
       <article>
-        <h4>L'enseignante</h4>
+        <h2>L'enseignante</h2>
         <p>Françoise ANTOINE a été l'élève de Fabienne Chéné pendant plusieurs années. Depuis 2015 elle assume à son tour le rôle d'enseignante.<br>
         C'est auprès de Patrick Loisel, élève direct de CHU Gin Soon, qu'elle continue de perfectionner sa pratique.<br>
         Visant à une compréhension étendue du corps humain, Françoise ANTOINE est aussi formée à l'énergétique chinoise et termine actuellement une
@@ -47,19 +49,20 @@
       </article>
 
       <article>
-        <h4>Le lieu</h4>
+        <h2>Le lieu</h2>
         <p>À Lanvollon, située à 17 km de Guingamp, 19km de Paimpol, 22km de Plérin
           Dans une grande salle dédiée au tai chi chuan, conçue pour cette pratique.
           Elle s'ouvre sur un auvent et une cour entourée de verdure.
         </p>
       </article>
 
-      <div class="moto">
-        " I want the power and grace I never had a chance to learn … <br/>
+      <blockquote>
+        <p>I want the power and grace I never had a chance to learn … <br/>
         Tai Chi puts you in touch with the invisible power of—yes—the universe.<br/>
-        The best of energies become available, and soon your body and mind become an invisible power. "<br/>
-        —Lou Reed
-      </div>
+        The best of energies become available, and soon your body and mind become an invisible power.
+        </p>
+        <footer>—Lou Reed</footer>
+      </blockquote>
 
     </div>
 
@@ -68,7 +71,7 @@
         <img src="yang_chen_fu.jpg" alt="Yang Chen Fu" />
       </div>
       <article>
-        <h4>Notre lignée</h4>
+        <h2>Notre lignée</h2>
         <p>YANG Cheng Fu (1883-1936) a adapté la forme Yang à partir des formes ancestrales,
         et l'a transmise à ses fils, dont
         YANG Sau Chung (1910-1985) qui l'a enseigné à des disciples dont
@@ -80,7 +83,7 @@
 
     <div id="enseignement" class="container">
       <article>
-        <h4>Techniques travaillées</h4>
+        <h2>Techniques travaillées</h2>
         <ul>
           <li>Forme yang longue à mains nues.</li>
           <li>Travail à deux (poussée des mains, mains collantes, Dalu)</li>
@@ -89,7 +92,7 @@
       </article>
 
       <article>
-        <h4>Déroulé d'un cours</h4>
+        <h2>Déroulé d'un cours</h2>
         <p>Le cours commence par du Qi Gong, partie commune à tous les élèves.
           Puis vient l'apprentissage de la forme. Certain.e.s la maîtrisent en entier, d'autres en partie.
           L'enseignante apporte un accompagnement individuel pour que chacun progresse à son
@@ -100,7 +103,7 @@
     </div>
     <div id="trouver" class="container">
       <article>
-        <h4>Horaires</h4>
+        <h2>Horaires</h2>
         <div class="dyptique" id="horaires">
           <span>mardi</span>
           <div>
@@ -117,16 +120,16 @@
       </article>
 
       <article>
-        <h4>Contact</h4>
-        <div class="dyptique" id="contact">
+        <h2>Contact</h2>
+        <address class="dyptique" id="contact">
           <span>nom</span><span>Françoise ANTOINE</span>
           <span>email</span><a href="mailto:scoise@free.fr">scoise@free.fr</a>
           <span>téléphone</span><a href="tel:+33604001300">06 04 00 13 00</a>
-        </div>
+        </address>
       </article>
 
       <article>
-        <h4>Tarifs</h4>
+        <h2>Tarifs</h2>
         <ul>
           <li>222€ par an pour le travail à mains nues.</li>
           <li>Payable en trois fois.</li>
@@ -135,7 +138,7 @@
       </article>
 
       <article>
-        <h4>Plan</h4>
+        <h2>Plan</h2>
         <div class="centered">
           <div id="map"></div>
         </div>
@@ -144,45 +147,5 @@
     </div>
 
   </div>
-
-
-
-  <script type="text/javascript">
-
-    document.querySelectorAll('a').forEach( a => {
-      a.setAttribute('data-href', a.href.split('#').pop())
-      a.removeAttribute('href')
-
-      a.addEventListener('click', (ev)=>{
-
-        ev.stopImmediatePropagation()
-        document.querySelectorAll('a').forEach( a => a.classList.remove('active-link'))
-        ev.target.classList.add('active-link')
-
-        const target = document.getElementById(a.getAttribute('data-href'))
-        if(!target) return
-        document.querySelectorAll(".targeted").forEach( tar => {
-          tar.classList.remove('targeted')
-        })
-        target.classList.add('targeted')
-      })
-    })
-  </script>
-
-  <script defer>
-    const map = L.map('map').setView([48.630841, -2.979158], 14);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    L.marker([48.630841, -2.979158]).addTo(map);
-
-    const resizeObserver = new ResizeObserver(() => {
-      map.invalidateSize();
-    });
-
-    resizeObserver.observe(document.getElementById('map'));
-  </script>
-
   </body>
 </html>
