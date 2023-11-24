@@ -21,7 +21,7 @@ address {
 body {
     font-family: var(--base-font);
     font-size: var(--base-size);
-    background-color: #f6f5f191;
+    background-color: #fafafa;
     background-image: url("./yin_yang.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
