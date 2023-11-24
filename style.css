@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
 
 :root {
     --base-font: 'Bitter', serif;
+    --secondary-font: 'Hurricane', cursive;
     --fancy-font: 'Fuggles', cursive;
-    --base-size: 1.5rem;
-    --little-size: 1.2rem;
+    --base-size: 1.2rem;
+    --little-size: 1rem;
 }
 
 * {
@@ -19,7 +21,7 @@ address {
 body {
     font-family: var(--base-font);
     font-size: var(--base-size);
-    background-color: #f6f5f1;
+    background-color: #f6f5f191;
     background-image: url("./yin_yang.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -57,6 +59,11 @@ h1{
     font-weight: normal;
 }
 
+h2 {
+    font-size: 2.5em;
+    font-family: var(--secondary-font)
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -67,13 +74,21 @@ nav {
 
 blockquote {
     margin: 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px double sienna;
 }
+
+/*blockquote > p {*/
+/*    font-style: italic;*/
+/*    padding: 15px;*/
+/*    background: #eee;*/
+/*    border-radius: 5px;*/
+/*}*/
 
 blockquote > p {
     font-style: italic;
-    padding: 15px;
-    background: #eee;
-    border-radius: 5px;
 }
 
 blockquote > p::before {
@@ -176,6 +191,7 @@ p {
     align-content: start;
     align-items: center;
     gap: 1.5rem 3rem;
+    grid-auto-rows: 1fr;
 }
 
 .dyptique > a {
@@ -229,7 +245,6 @@ p {
 }
 
 article h2 {
-    font-size: 2rem;
     font-weight: normal;
     text-decoration-line: underline;
 }
