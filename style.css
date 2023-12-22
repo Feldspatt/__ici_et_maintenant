@@ -5,8 +5,8 @@
     --base-font: 'Bitter', serif;
     --secondary-font: 'Hurricane', cursive;
     --fancy-font: 'Fuggles', cursive;
-    --base-size: 1.2rem;
-    --little-size: 1rem;
+    --base-size: 1.2em;
+    --little-size: 1em;
 }
 
 * {
@@ -80,13 +80,6 @@ blockquote {
     border: 1px double sienna;
 }
 
-/*blockquote > p {*/
-/*    font-style: italic;*/
-/*    padding: 15px;*/
-/*    background: #eee;*/
-/*    border-radius: 5px;*/
-/*}*/
-
 blockquote > p {
     font-style: italic;
 }
@@ -119,7 +112,7 @@ a:active, .active-link {
     color: #76b476;
 }
 
-a:hover{
+a:hover, nav > span:hover {
     color: #76b476 !important;
 }
 
@@ -235,8 +228,8 @@ p {
     }
 }
 
-.illustration {
-    width: 100%
+img {
+    border-radius: 5px;
 }
 
 #map {
